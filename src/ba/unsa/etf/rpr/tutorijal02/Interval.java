@@ -64,7 +64,7 @@ public class Interval {
         if((Double.compare(v,pocetak)==0 && pripada1==true) || (Double.compare(v,kraj)==0 && pripada2==true)) return true;
         return false;
     }
-//sta ako je ista granica a na jednom intervalu je ukljucena a na drugom iskljucena
+
     public Interval intersect(Interval interval) {
         Interval i=new Interval();
         if(this.pocetak>interval.pocetak && this.pocetak<interval.kraj) {
